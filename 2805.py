@@ -1,5 +1,4 @@
 def sol(n, m, namu):
-
     low, high = 0, max(namu)
     subH = lambda x:x-H if x >= H else 0
 
