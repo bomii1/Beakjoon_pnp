@@ -2,7 +2,6 @@ def sol(rowIndex, columnIndex, chessBoard):
     filter = ["BWBWBWBW", "WBWBWBWB"]
     count1, count2 = 0,0
 
-    start = chessBoard[rowIndex][columnIndex]
     for i in range(8):
         for j in range(8):
             if i % 2 == 0:
@@ -21,14 +20,16 @@ def sol(rowIndex, columnIndex, chessBoard):
                     count2 += 1
     return min(count1, count2)
 
+# 입력
 row, column = map(int, input().split())
 chessBoard = []
-for w in range(row):
+for i in range(row):
     chessBoard.append(list(input()))
 
+# count 값을 담을 리스트
 minimum = []
-
-for a in range(row-7):
-    for b in range(column-7):
-        minimum.append(sol(a, b, chessBoard))
+# 출력
+for i in range(row-7):
+    for j in range(column-7):
+        minimum.append(sol(i, j, chessBoard))
 print(min(minimum))
