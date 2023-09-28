@@ -15,4 +15,19 @@ def makeOne(N):
 
 print(makeOne(N))
 
-
+"""
+# TopDown 방식
+def makeOne(N):
+    #print("f(", N, ")")
+    if N == 2 or N == 3:
+        return 1
+    if N == 1:
+        return 0
+    else:
+        if N % 3 == 0:
+            return min(makeOne(N-1) + 1, makeOne(N//3) + 1)
+        elif N % 2 == 0:
+            return min(makeOne(N-1) + 1, makeOne(N//2) + 1)
+        else:
+            return makeOne(N-1) + 1
+"""
