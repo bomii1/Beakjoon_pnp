@@ -1,4 +1,4 @@
-## 1463
+## 1260
 
 #### DFS (Depth-First Search, 깊이우선탐색)
 #### BFS (BFS, Breadth-First Search, 너비우선탐색)
