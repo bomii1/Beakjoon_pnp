@@ -1,7 +1,7 @@
 ## 1260
 
 #### DFS (Depth-First Search, 깊이우선탐색)
-#### BFS (BFS, Breadth-First Search, 너비우선탐색)
+#### BFS (Breadth-First Search, 너비우선탐색)
 
 - 입력 값을 토대로 인접 행렬로 변환
 
