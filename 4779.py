@@ -12,3 +12,4 @@ while True:
         dashString = "-" * 3**N
         print(contor(dashString))
     except:
+        break
